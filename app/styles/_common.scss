@@ -1,6 +1,10 @@
 html {
   font-size: 12px;
   font-family: "Open Sans", sans-serif;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 body {

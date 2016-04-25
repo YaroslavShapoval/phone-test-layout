@@ -16,3 +16,27 @@
   background: transparent no-repeat center center;
   background-size: contain;
 }
+
+@mixin phone-vertical {
+  @media (min-width: #{$phone-vertical-width}) and (min-height: #{$phone-vertical-height}) {
+    @content;
+  }
+}
+
+@mixin iphone-vertical {
+  @media (min-width: #{$iphone-width}) and (min-height: #{$iphone-height}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

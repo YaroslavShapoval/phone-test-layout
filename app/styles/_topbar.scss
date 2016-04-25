@@ -23,6 +23,10 @@
   &:last-child {
     border-right: none;
   }
+
+  @include tablet {
+    padding: 1.5rem;
+  }
 }
 
 .topbar--button_text {

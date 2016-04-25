@@ -2,7 +2,11 @@
   margin-bottom: 1em;
   padding: 0 2.5%;
 
-  font-size: .91rem;
+  font-size: .75rem;
   color: $gray;
   text-align: center;
+
+  @include phone-vertical {
+    font-size: .91rem;
+  }
 }

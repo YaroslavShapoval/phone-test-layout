@@ -1,6 +1,20 @@
 .message {
   max-width: 360px;
-  margin: 5vh auto;
+  margin: 7vh auto;
+
+  @include phone-vertical {
+    max-width: 300px;
+    margin: 8vh auto;
+  }
+
+  @include iphone-vertical {
+    margin: 15vh auto;
+  }
+
+  @include tablet {
+    max-width: 80%;
+    margin: 20vh auto;
+  }
 
   font-size: 1rem;
   text-align: center;
@@ -16,6 +30,10 @@
     background: linear-gradient(to bottom, $white 0%, $white-dirty 100%);
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid $gray-light;
+
+    @include tablet {
+      padding: 1.5em;
+    }
   }
 
   &--body {
@@ -23,8 +41,8 @@
   }
 
   &--text {
-    margin: 0 auto .5em;
-    font-size: .8rem;
+    margin: 0 auto 1em;
+    font-size: .9rem;
     line-height: 1.1;
 
     &--with_icon {
@@ -35,6 +53,24 @@
       margin-bottom: .7em;
       font-size: 1.3rem;
       font-weight: 600;
+
+      @include phone-vertical {
+        font-size: 1.7rem;
+      }
+
+      @include tablet {
+        font-size: 2rem;
+      }
+    }
+
+    @include phone-vertical {
+      margin-bottom: 1em;
+      font-size: 1.2rem;
+    }
+
+    @include tablet {
+      margin-bottom: 2em;
+      font-size: 1.5rem;
     }
   }
 
@@ -46,6 +82,11 @@
 
     background: transparent url('../images/phone.png') no-repeat center center;
     background-size: contain;
+
+    @include phone-vertical {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &--text_inner {
@@ -54,6 +95,10 @@
     padding-left: 1em;
     vertical-align: middle;
     text-align: left;
+
+    @include tablet {
+      max-width: 300px;
+    }
   }
 
   &--button {
@@ -65,5 +110,14 @@
     background: linear-gradient(to bottom, $purple-light 0%, $purple 100%);
     text-transform: uppercase;
     text-decoration: none;
+
+    @include phone-vertical {
+      font-size: 1.7em;
+    }
+
+    @include tablet {
+      font-size: 2em;
+      padding: .75em 1.5em;
+    }
   }
 }
