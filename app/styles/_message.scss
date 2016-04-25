@@ -1,26 +1,31 @@
 .message {
-  max-width: 360px;
-  margin: 7vh auto;
+  flex: 1;
 
-  @include phone-vertical {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+
+
+  &--inner {
+    flex: 0;
     max-width: 300px;
-    margin: 8vh auto;
-  }
+    margin: 0 auto;
 
-  @include iphone-vertical {
-    margin: 15vh auto;
-  }
+    font-size: 1rem;
+    text-align: center;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 $gray-light;
 
-  @include tablet {
-    max-width: 80%;
-    margin: 20vh auto;
-  }
+    @include phone-vertical {
+      max-width: 300px;
+    }
 
-  font-size: 1rem;
-  text-align: center;
-  background-color: $white;
-  border-radius: 5px;
-  box-shadow: 0 0 3px 0 $gray-light;
+    @include desktop {
+      max-width: none;
+    }
+  }
 
   &--header {
     padding: .75em;
@@ -31,7 +36,7 @@
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid $gray-light;
 
-    @include tablet {
+    @include desktop {
       padding: 1.5em;
     }
   }
@@ -58,7 +63,7 @@
         font-size: 1.7rem;
       }
 
-      @include tablet {
+      @include desktop {
         font-size: 2rem;
       }
     }
@@ -68,7 +73,7 @@
       font-size: 1.2rem;
     }
 
-    @include tablet {
+    @include desktop {
       margin-bottom: 2em;
       font-size: 1.5rem;
     }
@@ -96,7 +101,7 @@
     vertical-align: middle;
     text-align: left;
 
-    @include tablet {
+    @include desktop {
       max-width: 300px;
     }
   }
@@ -115,7 +120,7 @@
       font-size: 1.7em;
     }
 
-    @include tablet {
+    @include desktop {
       font-size: 2em;
       padding: .75em 1.5em;
     }

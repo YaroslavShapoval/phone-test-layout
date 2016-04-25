@@ -29,14 +29,8 @@
   }
 }
 
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
 @mixin desktop {
-  @media (min-width: #{$desktop-width}) {
+  @media (min-height: #{$desktop-height}) {
     @content;
   }
 }

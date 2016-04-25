@@ -1,14 +1,22 @@
 html {
+  height: 100%;
   font-size: 12px;
   font-family: "Open Sans", sans-serif;
 
-  @include tablet {
+  @include desktop {
     font-size: 14px;
   }
 }
 
 body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
   background-color: $white-dirty;
+  text-align: center;
+  overflow: hidden;
 }
 
 strong {
