@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="">
-  <head>
+<html lang="ru">
+<head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>test layout</title>
+    <title>Test layout</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -17,39 +17,73 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
-  </head>
-  <body>
+
+</head>
+
+<body>
     <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-      </ul>
+
+    <div class="topbar">
+        <div class="topbar--buttons_list">
+            <a href="#" class="topbar--button">
+                <i class="topbar--button_icon topbar--button_icon--music"></i>
+                <span class="topbar--button_text">Музыка</span>
+            </a>
+
+            <a href="#" class="topbar--button">
+                <i class="topbar--button_icon topbar--button_icon--play"></i>
+                <span class="topbar--button_text">Видео</span>
+            </a>
+
+            <a href="#" class="topbar--button">
+                <i class="topbar--button_icon topbar--button_icon--gamepad"></i>
+                <span class="topbar--button_text">Игры</span>
+            </a>
+        </div>
     </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+
+    <div class="message">
+        <header class="message--header">
+            Обращаем внимание
+        </header>
+
+        <div class="message--body">
+            <p class="message--text message--text--with_icon">
+                <i class="message--icon"></i>
+                <span class="message--text_inner">
+                    Сайт оптимизирован для мобильных устройств.
+                </span>
+            </p>
+
+            <p class="message--text message--text--subhead">
+                Чтобы продолжить нажмите “Войти”
+            </p>
+
+            <div class="message--button_wrapper">
+                <a href="#" class="message--button">Войти</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+            Стоимость ХХ руб. с НДС за X дней с основного счета МТС +7XXXXXXXXXX.
+            Нажатием кнопки &quot;&lt;название кнопки&gt;&quot; вы осуществляете заказ доступа к услуге &quot;&lt;название услуги, кратко отражающее ее содержание&gt;&quot;,
+            подтверждаете ознакомление и согласие с условиями его предоставления,
+            Порядком предоставления контентных услуг ПАО «МТС», правилами оказания услуги контент-провайдером &lt;наименование контент-провайдера&gt;.
+        </p>
+    </footer>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-  </body>
+</body>
 </html>

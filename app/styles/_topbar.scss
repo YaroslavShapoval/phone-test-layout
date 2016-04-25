@@ -1,0 +1,58 @@
+.topbar {
+  font-size: 1rem;
+  background: $white;
+}
+
+.topbar--buttons_list {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  box-shadow: 0 1px 5px 0 $gray-light;
+}
+
+.topbar--button {
+  display: table-cell;
+  width: 33.3%;
+  padding: 1rem;
+
+  border-right: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+  text-align: center;
+  text-decoration: none;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.topbar--button_text {
+  display: inline-block;
+  margin-left: .3em;
+  vertical-align: middle;
+
+  color: $black;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.67em;
+
+  text-transform: uppercase;
+}
+
+.topbar--button_icon {
+  @include icon();
+
+  &--music {
+    width: 20px;
+    background-image: url('../images/music.png');
+  }
+
+  &--play {
+    width: 21px;
+    background-image: url('../images/play.png');
+  }
+
+  &--gamepad {
+    width: 29px;
+    background-image: url('../images/gamepad.png');
+  }
+}

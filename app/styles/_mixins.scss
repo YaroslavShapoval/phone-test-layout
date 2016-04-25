@@ -1,0 +1,18 @@
+@mixin includeFont($fontPath, $fontVersion: 1.0, $fontType: "Regular") {
+  src: url('#{$fontPath}/#{$fontType}/OpenSans-#{$fontType}.eot?v=#{$fontVersion}');
+  src: url('#{$fontPath}/#{$fontType}/OpenSans-#{$fontType}.eot?#iefix&v=#{$fontVersion}') format('embedded-opentype'),
+  url('#{$fontPath}/#{$fontType}/OpenSans-#{$fontType}.woff2?v=#{$fontVersion}') format('woff2'),
+  url('#{$fontPath}/#{$fontType}/OpenSans-#{$fontType}.woff?v=#{$fontVersion}') format('woff'),
+  url('#{$fontPath}/#{$fontType}/OpenSans-#{$fontType}.ttf?v=#{$fontVersion}') format('truetype'),
+  url('#{$fontPath}/#{$fontType}/OpenSans-#{$fontType}.svg?v=#{$fontVersion}##{$fontType}') format('svg');
+}
+
+@mixin icon() {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+
+  vertical-align: middle;
+  background: transparent no-repeat center center;
+  background-size: contain;
+}

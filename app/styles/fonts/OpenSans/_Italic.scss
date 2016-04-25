@@ -1,0 +1,8 @@
+/* BEGIN Italic */
+@font-face {
+  font-family: 'Open Sans';
+  @include includeFont($openSansPath, $openSansVersion, "Italic");
+  font-weight: normal;
+  font-style: italic;
+}
+/* END Italic */
